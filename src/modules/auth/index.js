@@ -3,13 +3,11 @@ import { Route, Switch } from 'react-router-dom';
 
 import ForgotPage from './pages/ForgotPage';
 import LoginPage from './pages/LoginPage';
-import HomePage from './pages/renderer'
 
 const Login = () => (
   <Switch>
-    <Route path="/login" component={HomePage} />
+    <Route path="/login" component={LoginPage} />
     <Route path="/forgot" component={ForgotPage} />
-   
   </Switch>
 );
 
